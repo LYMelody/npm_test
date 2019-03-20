@@ -1,0 +1,27 @@
+{
+  "name": "printhello-zhp",
+  "version": "0.0.1",
+  "description": "hello  to someone",
+  "main": "a.js",
+  "scripts": {
+    "test": "echo name"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LYMelody/npm_test.git"
+  },
+  "keywords": [
+    "print",
+    "hello",
+    "name"
+  ],
+  "author": "zhouhuiping",
+  "license": "ISC",
+  "bin": {
+    "rflint-lint": "b.js"
+  },
+  "bugs": {
+    "url": "https://github.com/LYMelody/npm_test/issues"
+  },
+  "homepage": "https://github.com/LYMelody/npm_test#readme"
+}
