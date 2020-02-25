@@ -27,7 +27,13 @@ function searchFiles(path) {
 
 /// 对文件进行lint检测
 function lintFile(file) {
+    /// 检测是否有Documentation"
     fileHasDocumentation(file)
+
+    /// 不重名
+    noSameName(file)
+
+
 }
 
 /// 检测是否写了Documentation
@@ -35,7 +41,7 @@ function fileHasDocumentation(file) {
     if (!fs.existsSync(file)) {
         console.log('文件不存在!')
         return 
-    } 
+    }
     const liner = new readlineSync()
     liner.open(file)
     let lineContent;
@@ -56,4 +62,9 @@ function fileHasDocumentation(file) {
 
 function trim(str) {
     return str.replace(/\s|\xA0/g,"");    
+}
+
+/// Variable、Keywords、TestCase文件内不能重名
+function noSameName(file) {
+    
 }
